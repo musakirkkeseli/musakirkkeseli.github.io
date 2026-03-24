@@ -387,6 +387,91 @@ p {
   font-size: 0.92rem;
 }
 
+/* App Store İkon Stilleri */
+.project-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.card[data-app-logo="assets/qoor-ic-launcher.png"] .project-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.project-icon .app-icon-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+  border: 1px solid rgba(87, 166, 255, 0.3);
+  transition: all 0.2s ease;
+}
+
+.project-icon .app-icon-img:hover {
+  border-color: var(--primary);
+  box-shadow: 0 0 12px rgba(87, 166, 255, 0.4);
+  transform: scale(1.05);
+}
+
+ul li .app-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+ul li .app-icon .app-icon-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+  border: 1px solid rgba(87, 166, 255, 0.3);
+  transition: all 0.2s ease;
+}
+
+ul li .app-icon .app-icon-img:hover {
+  border-color: var(--primary);
+  box-shadow: 0 0 12px rgba(87, 166, 255, 0.4);
+  transform: scale(1.05);
+}
+
+.app-icon-wrapper {
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.app-icon-wrapper .app-icon-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: inline-block;
+  object-fit: cover;
+  border: 1px solid rgba(87, 166, 255, 0.3);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.app-icon-wrapper .app-icon-img:hover {
+  border-color: var(--primary);
+  box-shadow: 0 0 12px rgba(87, 166, 255, 0.4);
+  transform: scale(1.1);
+}
+
+a:has(> .app-icon-wrapper) {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
 @media (max-width: 640px) {
   .experience-axis {
     height: auto;
