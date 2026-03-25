@@ -403,6 +403,20 @@ p {
   height: 32px;
 }
 
+.card[data-app-logo="assets/hospital-framework.jpeg"] .project-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.card[data-app-logo="assets/hospital-framework.jpeg"] .project-icon .app-icon-img {
+  object-fit: contain;
+  object-position: center;
+  background: #ffffff;
+}
+
 .project-icon .app-icon-img {
   width: 100%;
   height: 100%;
