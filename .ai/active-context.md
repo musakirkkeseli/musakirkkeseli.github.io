@@ -46,7 +46,8 @@ http://localhost:8765
   Pratik Bilişim 2 yıl 6 ay, Proje Yöneticisi rolü 1 yıl 3 ay, Techno Soft
   1 yıl 5 ay. Eksen geometrisi (`--total`, `--span`) değiştirilmedi —
   `styles.css` bu oturumda hiç değişmedi.
-- Hiçbiri commit edilmedi.
+- Tümü commit edildi: `e8116ac` (.ai dokümantasyonu) ve `7f8a80e` (içerik).
+  **Push edilmedi** — push canlıya çıkış demek, kullanıcı onayı bekleniyor.
 
 ## Bilinmesi Gerekenler
 
@@ -65,5 +66,8 @@ http://localhost:8765
 
 ## Sonraki Adımlar
 
-Kullanıcıyla birlikte içerik düzenlemeleri sürüyor. Bekleyen commit var —
-kullanıcı onaylayınca commit/push edilecek (push = canlıya çıkış).
+- Push kullanıcı onayı bekliyor (`main` → GitHub Pages, canlıya çıkar).
+- BankoAsist detayındaki Mermaid sequence diyagramının tarayıcıda render
+  olduğu doğrulanmadı — drawer açılıp kontrol edilmeli.
+- Lokman Hekim'in **mobil uygulama** kaydı altyapı listesinde hâlâ aktif;
+  kalıp kalmayacağı kullanıcıya soruldu, yanıt bekleniyor.
