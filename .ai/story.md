@@ -1,5 +1,27 @@
 # Proje Günlüğü
 
+## 2026-07-23 — Zaman çizelgesi tersine çevrildi (yeniden eskiye)
+
+Çizelge yukarıdan aşağı eskiden yeniye akıyordu; yeniden eskiye çevrildi.
+
+**Yöntem — saf geometrik ayna.** Bu düzenin kritik özelliği: bantlar
+(`--span` aralıkları) birbiriyle çakışıyor, kartlar ise sol/sağ + lane ve
+`align-top`/`align-bottom` ile ayrılıyor. Dikey aynalama bir izometridir —
+mesafeleri ve çakışmaları birebir korur. Dolayısıyla mevcut düzen temizse,
+aynası da temizdir.
+
+Uygulanan dönüşüm (yalnızca inline değerler, CSS'e dokunulmadı):
+- Kart: yeni `--start` = `--total` − (eski_start + span); span sabit
+- Her kartın `align-top` durumu **ters çevrildi** (ayna kartı bandın öbür
+  ucuna taşıdığı için şart — yoksa kartlar üst üste biner)
+- Yıl etiketi: yeni `--pos` = 112 − eski_pos
+- Eksen etiketleri yer değiştirdi (üst: Tem 2026, alt: Eyl 2018)
+
+`min-height: 58px` bandı her zaman aşağı doğru büyüttüğü için Qoor (span 4)
+tam ayna olmuyor; ~26px kayıyor. Kontrol edildi: komşularından uzak, çakışma
+yaratmıyor. Sekiz kartın piksel aralıkları scriptle hesaplanıp aynı taraf+lane
+içinde çakışma olmadığı doğrulandı.
+
 ## 2026-07-23 — BankoAsist'e rol ve süreç kapsamı eklendi
 
 Karta **Kapsanan Süreçler** maddesi girdi: muayene dosyası oluşturma ve ödeme,

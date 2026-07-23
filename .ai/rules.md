@@ -69,6 +69,15 @@ kayıt eklerken müdahale et.
 `h2` başlığındaki toplam süre ve kart içi süre metinleri elle yazılıdır —
 tarih değişince onları yeniden hesapla.
 
+**Çizelge şu an yukarıdan aşağı yeniden eskiye sıralı** (üst: Tem 2026,
+alt: Eyl 2018). Yıl `--pos` ve kart `--start` değerleri 0=en yeni uç
+mantığına göre büyür. Ekseni yönünü koruyarak taşımak istersen (ör. tümünü
+aynalamak) izometri kuralı: yeni_start = `--total` − (start+span), span sabit,
+ve **her kartın `align-top` durumunu ters çevir** — yoksa çakışmayan kartlar
+üst üste biner. Değişiklikten sonra kartların piksel aralıklarını (bant üstü
+= start·unit, yükseklik = max(span·unit, 58px), align'a göre kart konumu)
+hesaplayıp aynı side+lane içinde çakışma olmadığını doğrula.
+
 ### Proje ikonları
 Kart `data-app-id="<numeric>"` taşıyorsa ikon `assets/appstore/<id>.jpg`
 yolundan otomatik yüklenir. App Store'da olmayan projeler için

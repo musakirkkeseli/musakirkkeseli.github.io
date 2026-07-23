@@ -37,6 +37,12 @@ http://localhost:8765
   `~/Desktop/pratik/pavo/images/StartPaymentDiagramNew.png` görseliydi; PNG
   gömmek yerine diyagram Mermaid olarak yeniden yazıldı.
   **Tarayıcıda render doğrulanmadı** — drawer açılıp kontrol edilmeli.
+- Zaman çizelgesi ters çevrildi: artık yukarıdan aşağı yeniden eskiye
+  (en üstte 2025-2026 devam eden işler, en altta Eyl 2018). Saf geometrik
+  ayna uygulandı — CSS'e dokunulmadı, sadece inline değerler değişti:
+  yeni `--start` = 112 − (start+span), her kartın `align-top` durumu ters
+  çevrildi, yıl `--pos` = 112 − eski, eksen etiketleri yer değiştirdi.
+  Çakışmasızlık scriptle doğrulandı.
 - BankoAsist kartına "Kapsanan Süreçler" maddesi eklendi. Proje yöneticiliği
   ayrı bir `Rol:` maddesi olarak değil, tanıtım paragrafının içinde anlatılıyor
   (kullanıcı tercihi). Drawer'da da süreç listesi ayrı madde oldu ve rol
